@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text" id="search" placeholder="Search for notes...">
+            <span id="date">October 08, 2024</span>
+        </div>
+        <div class="note-editor">
+            <input type="text" id="title" placeholder="Enter Title" required>
+            <textarea id="note" placeholder="Enter Note" required></textarea>
+            <div class="actions">
+                <button id="save">Save</button>
+                <button id="share">Share</button>
+                <button id="delete">Delete</button>
+                <button id="edit">Edit</button>
+            </div>
+        </div>
+        <div id="notes-list"></div>
+    </div>
+    <script src="notes.js"></script>
+</body>
+</html>

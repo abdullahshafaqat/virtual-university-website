@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Book</title>
+    <link rel="stylesheet" href="grade-book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+      
+        <h1><i class="fas fa-book"></i> Grade Book</h1>
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'StudentGradeBook')">
+                <i class="fas fa-user-graduate"></i> Student Grade Book
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'MidtermResult')">
+                <i class="fas fa-file-alt"></i> Midterm Result (FALL 2024)
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'GradingScheme')">
+                <i class="fas fa-chart-bar"></i> Grading Scheme
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'CGPACalculator')">
+                <i class="fas fa-calculator"></i> Projected CGPA Calculator
+            </button>
+        </div>
+
+        <div id="StudentGradeBook" class="tabcontent">
+            <h2>Student Grade Book</h2>
+            <!-- Add content for Student Grade Book here -->
+        </div>
+
+        <div id="MidtermResult" class="tabcontent">
+            <h2>Midterm Result (FALL 2024)</h2>
+            <p>No Record Found!</p>
+        </div>
+
+        <div id="GradingScheme" class="tabcontent">
+            <h2>Grading Scheme</h2>
+            <!-- Add content for Grading Scheme here -->
+        </div>
+
+        <div id="CGPACalculator" class="tabcontent">
+            <h2>Projected CGPA Calculator</h2>
+            <!-- Add content for Projected CGPA Calculator here -->
+        </div>
+    </div>
+    <script src="grade-book.js"></script>
+</body>
+</html>

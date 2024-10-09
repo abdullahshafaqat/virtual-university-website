@@ -1,0 +1,166 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5867dd;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-content {
+    padding: 20px 30px;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Calendar Section */
+.calendar-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.tab-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+    background-color: #5867dd;
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #5867dd;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.month-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5867dd;
+}
+
+.view-buttons {
+    display: flex;
+}
+
+.view-btn {
+    padding: 5px 15px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.view-btn.active {
+    background-color: #5867dd;
+    color: white;
+}
+
+/* Calendar Table */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar-table th, .calendar-table td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.date-cell {
+    cursor: pointer;
+}
+
+.date-cell:hover {
+    background-color: #e8e9fc;
+}
+
+.date-cell.today {
+    background-color: #e1e4ff;
+    border: 1px solid #5867dd;
+    font-weight: bold;
+}
+
+.empty {
+    color: #ccc;
+}
+
+.date-cell.active-day {
+    background-color: #f5f5ff;
+    color: #5867dd;
+}

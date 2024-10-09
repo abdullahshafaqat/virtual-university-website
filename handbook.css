@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ .header {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #000080;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    height: 75px;
+    width:84rem;
+}
+
+ .title {
+
+    padding-left: 20px;
+    color: #000080;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 100px); /* Adjust height to fill the screen */
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000080;
+    cursor: pointer;
+}
+
+.sidebar li ul {
+    padding-left: 20px;
+}
+
+.sidebar li ul li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #000080;
+}
+
+.content p {
+    font-size: 24px;
+    color: #666;
+}
+
+.book-icon {
+    margin-top: 20px;
+    width: 150px;
+    opacity: 0.2; /* Faded effect for the book icon */
+}

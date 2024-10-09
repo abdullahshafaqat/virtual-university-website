@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="container">
+        <div class="notice-board">
+            <div class="section-header">
+                <h2>News & Events</h2>
+                <button class="back-btn">&larr; Back</button>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="Search for..." id="search-bar">
+                <button class="search-btn">🔍</button>
+                <button class="refresh-btn">Refresh</button>
+            </div>
+            <div class="news-events">
+                <div class="news-item">
+                    <div class="date">
+                        <span>Oct 09</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Register for the 14th Convocation of Virtual University of Pakistan</h3>
+                        <p>October 09, 2024</p>
+                    </div>
+                </div>
+                <!-- Repeat .news-item for each news entry -->
+            </div>
+        </div>
+
+        <div class="important-links">
+            <div class="section-header">
+                <h2>Important Links & Notifications</h2>
+            </div>
+            <div class="links">
+                <div class="link-item">
+                    <div class="date">
+                        <span>Jul 11</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="link-content">
+                        <h3>Beware of Fake Websites</h3>
+                        <p>July 11, 2024</p>
+                    </div>
+                </div>
+                <!-- Repeat .link-item for each notification entry -->
+            </div>
+        </div>
+    </div>
+
+    <script src="notification.js"></script>
+</body>
+</html>

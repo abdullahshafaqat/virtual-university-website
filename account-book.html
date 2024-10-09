@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Book</title>
+    <link rel="stylesheet" href="account-book.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Account Book</h2>
+        <table class="account-table">
+            <thead>
+                <tr>
+                    <th>Challan No</th>
+                    <th>Challan Type</th>
+                    <th>Payable</th>
+                    <th>Paid</th>
+                    <th>Balance</th>
+                    <th>Date</th>
+                    <th>Payment Mode</th>
+                    <th>Cancelled</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20274622</td>
+                    <td>NewAdmission_Processing</td>
+                    <td>500</td>
+                    <td class="paid">500</td>
+                    <td>0</td>
+                    <td>
+                        Due Date: Sep 10, 2024<br>
+                        Paid Date: <span class="date-paid">Sep 04, 2024</span>
+                    </td>
+                    <td>TMFBLOline</td>
+                    <td></td>
+                    <td><span class="status-paid">PAID</span></td>
+                </tr>
+                <tr>
+                    <td>20276923</td>
+                    <td>NewAdmission</td>
+                    <td>11405</td>
+                    <td class="paid">11405</td>
+                    <td>0</td>
+                    <td>
+                        Due Date: Sep 07, 2024<br>
+                        Paid Date: <span class="date-paid">Sep 09, 2024</span>
+                    </td>
+                    <td>HBL</td>
+                    <td></td>
+                    <td><span class="status-paid">PAID</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-amount">
+            Total Payable Amount: <span class="amount">Rs 0 / $ 0</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Timeline</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+    <div class="progress-container">
+        <h2>Progress Timeline</h2>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('course1')">CS101-Introduction to Computing</button>
+            <button class="tab" onclick="showTab('course2')">CS201-Introduction to Programming</button>
+            <button class="tab" onclick="showTab('course3')">CS201P-Introduction to Programming (Practical)</button>
+            <button class="tab" onclick="showTab('course4')">ENG101-English Comprehension</button>
+            <button class="tab" onclick="showTab('course5')">ISL202-Islamic Studies</button>
+            <button class="tab" onclick="showTab('course6')">MTH101-Calculus And Analytical Geometry</button>
+            <button class="tab" onclick="showTab('course7')">PAK301-Pakistan Studies</button>
+            <button class="tab" onclick="showTab('course8')">VU001-Introduction to e-Learning</button>
+        </div>
+
+        <!-- Course Content Sections -->
+        <div id="course1" class="course-content active-content">
+            <h3>Graded Activities</h3>
+            <div class="activities-grid">
+                <div class="activity">
+                    <h4>Assignments</h4>
+                    <p class="no-record">No Record Found</p>
+                </div>
+                <div class="activity">
+                    <h4>GDB</h4>
+                    <p class="no-record">No Record Found</p>
+                </div>
+                <div class="activity">
+                    <h4>Quizzes</h4>
+                    <p class="no-record">No Record Found</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="course2" class="course-content">
+            <h3>CS201-Introduction to Programming</h3>
+            <p>This course covers programming fundamentals, data structures, and algorithms.</p>
+        </div>
+
+        <div id="course3" class="course-content">
+            <h3>CS201P-Introduction to Programming (Practical)</h3>
+            <p>This is the practical part of programming, focusing on hands-on exercises and projects.</p>
+        </div>
+
+        <div id="course4" class="course-content">
+            <h3>ENG101-English Comprehension</h3>
+            <p>This course focuses on improving English language skills through comprehension exercises.</p>
+        </div>
+
+        <div id="course5" class="course-content">
+            <h3>ISL202-Islamic Studies</h3>
+            <p>This course provides an in-depth understanding of Islamic teachings and their application in daily life.</p>
+        </div>
+
+        <div id="course6" class="course-content">
+            <h3>MTH101-Calculus And Analytical Geometry</h3>
+            <p>This course covers calculus topics such as limits, derivatives, and integration along with analytical geometry.</p>
+        </div>
+
+        <div id="course7" class="course-content">
+            <h3>PAK301-Pakistan Studies</h3>
+            <p>This course focuses on the history, politics, and culture of Pakistan.</p>
+        </div>
+
+        <div id="course8" class="course-content">
+            <h3>VU001-Introduction to e-Learning</h3>
+            <p>This course introduces students to the basics of e-learning platforms and best practices.</p>
+        </div>
+    </div>
+    
+    <script src="progress .js"></script>
+</body>
+</html>

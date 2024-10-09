@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>University Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="vu-logo2.png" alt="University Logo" class="university-logo">
+            <div class="input-group">
+                <input type="text" placeholder="Student ID" required>
+
+            </div>
+            <div class="input-group">
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="toggle-password" id="toggle-password">
+                        <i class="fas fa-eye" id="eye-icon"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="form-links">
+                <!-- Link to Forgot Password Page -->
+                <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button class="login-button">Sign In</button>
+            <!-- Calendar Icon and Text with Link -->
+            <div class="date-sheet">
+                <a href="date-sheet.html" class="icon-link">
+                    <i class="fas fa-calendar" id="calendar-icon"></i>
+                    <span class="date-sheet-text">Check Your Date Sheet</span>
+                </a>
+            </div>
+
+            <!-- Notification Bell Icon and Text with Link -->
+            <div class="notification">
+                <a href="notice-board.html" class="icon-link">
+                    <i class="fas fa-bell" id="notification-icon"></i>
+                    <span class="notification-text">Notice Board</span>
+                </a>
+            </div>
+            <!-- Book Icon and Text with Link -->
+            <div class="student-handbook">
+                <a href="student-handbook.html" class="icon-link">
+                    <i class="fas fa-book" id="book-icon"></i>
+                    <span class="handbook-text">Student Hand Book</span>
+                </a>
+            </div>
+        </div>
+    </div>
+     <!-- Full-Screen Right-Side Image Container -->
+     <div class="right-side-image">
+        <img src="Capture.PNG" alt="Full Right Side Image" class="full-image">
+        <div class="overlay-text">Learning Management System</div>
+        <div class="urdu-text">
+           " جو عقلمند سے لڑے وہ عزت کی توقع نہ رکھے۔ شیخ سعدیؒ "</div>
+    </div>
+   <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <a href="university-page.html" target="_blank">
+            <img src="vu-logo2.png" alt="Virtual University Logo" class="footer-logo" id="university-logo">
+        </a>
+        <a href="govt-page.html" target="_blank">
+            <img src="govt-logo.png" alt="Government of Pakistan Logo" class="footer-logo" id="govt-logo">
+        </a>
+        <!-- Contact Us Icon with Text -->
+        <a href="contact-us.html" class="footer-link">
+            <i class="fas fa-phone" id="contact-icon"></i>
+            <span class="footer-text">Contact Us</span>
+        </a>
+        <!-- Help Icon with Text -->
+        <a href="help.html" class="footer-link">
+            <i class="fas fa-question-circle" id="help-icon"></i>
+            <span class="footer-text">Help</span>
+        </a>
+        <p>&copy; 2024 Virtual University of Pakistan. All rights reserved.</p>
+    </div>
+        <!-- Social Media Icons on the Right Side -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-link">
+                <i class="fab fa-facebook" id="facebook-icon"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-link">
+                <i class="fab fa-twitter" id="twitter-icon"></i>
+            </a>
+        </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

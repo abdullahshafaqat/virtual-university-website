@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.progress-container {
+    width: 70%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 15px;
+    margin-right: 5px;
+    background-color: #f4f4f9;
+    border: none;
+    cursor: pointer;
+    color: #645c99;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab:hover {
+    background-color: #7e75d6;
+    color: #ddd;
+}
+
+.active {
+    background-color: #7e75d6;
+    color: #ffffff;
+}
+
+.course-content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+.graded-activities {
+    margin-top: 20px;
+}
+
+h3 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.activities-grid {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.activity {
+    width: 30%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 16px;
+    color: #333333;
+}
+
+.no-record {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,82 @@
+/* General Page Styles */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Loading Section */
+.loading {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Loading Spinner Styles */
+.spinner {
+    border: 6px solid #f3f3f3; /* Light gray */
+    border-top: 6px solid #5867dd; /* VU Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+/* Keyframe for Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Additional Styles for Redirect Section */
+.redirect-section {
+    margin-top: 20px;
+    display: none; /* Hide by default */
+}
+
+.redirect-section button {
+    background-color: #5867dd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.redirect-section button:hover {
+    background-color: #4757aa;
+}

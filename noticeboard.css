@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin-left: 14rem;
+    font-size:35px;
+    color: #5867dd; /* Changed color */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.news-events, .important-links {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-events h2, .important-links h2 {
+    border-bottom: 2px solid #5867dd; /* Changed color */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.search {
+    width: 10%;
+    text-align: center;
+}
+
+.search input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #5867dd; /* Changed color */
+    border-radius: 3px;
+}
+
+.search button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #5867dd; /* Changed color */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #4553b5; /* Slightly darker shade for hover effect */
+}
+header {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio */
+    margin-left: 2rem; /* Space between logo and heading */
+}
+
+.search-news {
+    display: flex; /* Aligns search box and button in a row */
+    margin-bottom: 10px; /* Space below the search box */
+}
+
+.search-news input {
+    flex: 1; /* Takes up the remaining space */
+    padding: 5px;
+    border: 1px solid #5867dd; /* Match with other borders */
+    border-radius: 3px;
+    margin-right: 5px; /* Space between input and button */
+}
+
+.search-news button {
+    padding: 5px 10px; /* Adjust padding for button */
+    background-color: #5867dd; /* Same color as other buttons */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search-news button:hover {
+    background-color: #4553b5; /* Slightly darker shade for hover effect */
+}

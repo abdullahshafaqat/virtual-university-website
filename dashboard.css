@@ -1,0 +1,346 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.material-icons {
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.material-icons:hover {
+    animation: vibrate 0.2s infinite;
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c2e3e;
+    color: white;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 50px;
+    margin: 0 10px;
+    
+}
+
+/* Sidebar Navigation Links */
+.sidebar-nav a {
+    text-decoration: none; /* Removes the underline from links */
+    color: white; /* Set text color to white */
+}
+
+.sidebar-nav a:hover {
+    text-decoration: none; /* Optional: Add underline on hover */
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.sidebar-nav li:hover {
+    background-color: #2c2e3e;
+}
+
+.sidebar-nav .material-icons {
+    margin-right: 15px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info  .material-icons{
+    margin-right: 10px;
+    color: #5867dd;
+    font-size: 45px;
+    cursor: pointer;
+}
+.notification-icon:hover {
+    animation: vibrate 0.1s infinite;
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+}
+
+.username {
+    margin-right: 15px;
+    
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 50px;
+    cursor: pointer;
+}
+
+.course-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.course-section .alert {
+    background-color: #dfe7fd;
+    color: #5867dd;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.courses {
+    display: flex;
+    gap: 20px;
+}
+
+.course-box {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.instructor {
+    display: flex;
+    margin-top: 15px;
+}
+
+.instructor img {
+    border-radius: 50%;
+    margin-right: 10px;
+    height:70px;
+    width: 80px ;
+}
+
+.course-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.logo1{
+    height:50px;
+    width:100px ;
+margin-right: 0;
+}
+/* Profile Dropdown Styles */
+.profile-dropdown {
+    position: absolute;
+    top: 70px; /* Adjusted based on header height */
+    right: 30px;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+
+.dropdown-upper {
+    background: url('Capture.PNG') center/cover no-repeat; /* Use your desired background image */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown-photo {
+    width: 67px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.dropdown-text {
+    color: #ffffff;
+}
+
+.dropdown-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dropdown-designation {
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+.dropdown-lower {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.dropdown-item span {
+    margin-left: 10px;
+    color: #333;
+}
+
+.logout-button {
+    padding: 10px;
+    border: 2px solid #5867dd;
+    background: transparent;
+    color: #5867dd;
+    cursor: pointer;
+    border-radius: 47px;
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #ebedf2;
+}
+
+/* -------------------
+footer
+--------------*/
+.footer {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding for spacing */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    height: 4%;
+    width: 100%; /* Full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items to the left and right */
+    align-items: center; /* Vertically center the content */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox within the content */
+    align-items: center; /* Center align items vertically */
+    
+}
+
+.footer-logo {
+    width: 50px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.3s; /* Smooth scaling effect */
+    margin-left: 10px;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.footer-link {
+    display: flex; /* Inline flex for icon and text */
+    align-items: center; /* Vertically align the icon and text */
+    text-decoration: none; /* Remove underline */
+    color: #5867dd; /* Set link text color */
+    margin: 0 15px; /* Add some space between items */
+    cursor: pointer; /* Show pointer on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-link:hover {
+    color: #2a3eb1; /* Darker shade on hover */
+}
+
+.footer-text {
+    margin-left: 5px; /* Space between icon and text */
+}
+
+.footer-content p {
+    margin-left: 170px;
+    color: #5867dd; /* Dark text color */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    display: flex; /* Flexbox for the right-aligned icons */
+    gap: 20px; /* Space between the icons */
+    margin-left: 75rem;
+    position: fixed;
+   
+    
+}
+
+.social-link {
+    color: #3b5998; /* Facebook color */
+    font-size: 45px; /* Adjust icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-link:hover {
+    color: #2a3eb1; /* Slight color change on hover */
+}
+
+#twitter-icon {
+    color: #1DA1F2; /* Twitter color */
+}
+
+.social-link:hover#twitter-icon {
+    color: #0d8bec; /* Darker shade on hover */
+}

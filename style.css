@@ -1,0 +1,340 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+}
+
+.login-container {
+    display: flex;
+    justify-content: flex-start; /* Align container to the left */
+    align-items: center;
+    height: 88vh;
+    padding-left: 0px; /* Optional padding to move the box a bit from the left edge */
+}
+
+.login-box {
+    background: #fff;
+     /* Increased padding for more space inside the box */
+   padding: 50px;
+   
+    width: 452px;
+    height: 458px; /* Increased height for the login box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.university-logo {
+    width: 150px;
+    margin-bottom: 4px; /* Increased space between logo and input fields */
+}
+
+.input-group {
+    margin-bottom: 25px; /* Adjusted space between input fields */
+    text-align: left;
+}
+
+.input-group input {
+    margin-left: 82px;
+    width: 60%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border 0.3s ease-in-out; /* Smooth transition for border color */
+    font-size: 16px;
+}
+
+/* Focused input fields will have the same color as the "Sign In" button's background */
+.input-group input:focus {
+    border: 1px solid #5867dd; /* Matching border color */
+    outline: none; /* Remove default blue outline */
+}
+
+.form-links {
+    text-align: center; /* Center the link */
+    margin-bottom: 20px; /* Adjusted spacing */
+}
+
+.forgot-password {
+    color: #5867dd;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Updated Button Styling */
+.login-button {
+    width: 35%; /* Decreased width to 60% of the login box */
+    padding: 17px;
+    background: linear-gradient(135deg, #5867dd, #4757c9); /* Gradient background */
+    color: #fff;
+    border: none;
+    border-radius: 45px; /* Rounded corners similar to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for button */
+    cursor: pointer;
+    font-size: 19px;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 auto; /* Center the button */
+}
+
+/* Hover and Click Effects */
+.login-button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.login-button:active {
+    transform: translateY(1px); /* Button depress effect on click */
+}
+.input-group {
+    margin-bottom: 20px; /* Space between input fields */
+    position: relative; /* Positioning for the icon */
+}
+
+.toggle-id,
+.toggle-password {
+    position: absolute;
+    right: 90px; /* Space from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    cursor: pointer;
+    color: #5867dd; /* Icon color */
+    font-size: 18px; /* Adjust icon size if needed */
+}
+
+.toggle-id:hover,
+.toggle-password:hover {
+    color: #4757c9;
+
+     /* Darker color on hover */
+}
+/* Notification icons */
+.notification {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Space between the button and notification */
+    font-size: 17px; /* Font size for notification text */
+    color: #5867dd;
+    cursor: pointer;
+     /* Text color */
+}
+
+#notification-icon {
+    font-size: 19px; /* Size of the bell icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+/* hand book styling */
+.student-handbook {
+    display: flex;
+    align-items: center;
+    margin-top: 26px; /* Space between notification and handbook */
+    font-size: 16px; /* Font size for handbook text */
+    color: #5867dd;
+    cursor: pointer; /* Text color */
+}
+
+#book-icon {
+    font-size: 20px; /* Size of the book icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+/* calender icon styling */
+.date-sheet {
+    display: flex;
+    align-items: center;
+    margin-top: 30px; /* Space between the last item and the calendar */
+    font-size: 16px; /* Font size for date sheet text */
+    color: red; /* Text color */
+    cursor: pointer;
+}
+
+#calendar-icon {
+    font-size: 19px; /* Size of the calendar icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Blinking effect */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.date-sheet-text {
+    animation: blink 1s infinite; /* Blinking animation */
+}
+/* pages linking styling */
+.icon-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent elements */
+}
+
+.notification, .student-handbook, .date-sheet {
+    display: flex;
+    align-items: center;
+    margin-top: 25px; /* Space between sections */
+    font-size: 18px;
+}
+
+/* Notification Bell */
+#notification-icon {
+    font-size: 20px; /* Size of the bell icon */
+    margin-right: 8px;
+}
+
+/* Book Icon */
+#book-icon {
+    font-size: 20px; /* Size of the book icon */
+    margin-right: 8px;
+}
+
+/* Calendar Icon */
+#calendar-icon {
+    font-size: 20px; /* Size of the calendar icon */
+    margin-right: 8px;
+}
+
+/* Blinking effect for "Check Your Date Sheet" text */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.date-sheet-text {
+    color: red;
+    animation: blink 1s infinite; /* Blinking animation */
+}
+/*------------------
+ right side image styling 
+--------------------- */
+/* Style for the Right Side Image */
+/* Split-Screen Container for the Right-Side Image */
+.right-side-image {
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 0;
+  
+    right: 0px; /* Align the container to the right */
+    width:60%; /* Take half of the screen width */
+    height: 90vh; /* Cover the full height of the screen */
+    overflow: hidden; /* Hide overflow in case the image exceeds container bounds */
+}
+
+/* Full-Display Image Styling */
+.full-image {
+    /*  Cover the full width of the container */ */
+    width: 100%;
+    height: 100%; /* Cover the full height of the container */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+.overlay-text {
+    position: absolute;
+    color: white;
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 46px; /* Adjust the font size as needed */
+    top: 20%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding: 5px 10px; /* Optional padding */
+}
+.urdu-text {
+    position: absolute; /* Positions text within the container */
+    color: #ffffff; /* White text color */
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 24px; /* Adjust as necessary */
+    top: 50%; /* Vertically centers the text */
+    right: 120px; /* Position text on the right */
+    transform: translateY(-50%); /* Centers the text vertically */
+    direction: rtl; /* Right-to-left text direction for Urdu */
+}
+
+
+/* -------------------
+footer
+--------------*/
+.footer {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding for spacing */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    height: 4%;
+    width: 100%; /* Full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items to the left and right */
+    align-items: center; /* Vertically center the content */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox within the content */
+    align-items: center; /* Center align items vertically */
+    
+}
+
+.footer-logo {
+    width: 50px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.3s; /* Smooth scaling effect */
+    margin-left: 10px;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.footer-link {
+    display: flex; /* Inline flex for icon and text */
+    align-items: center; /* Vertically align the icon and text */
+    text-decoration: none; /* Remove underline */
+    color: #5867dd; /* Set link text color */
+    margin: 0 15px; /* Add some space between items */
+    cursor: pointer; /* Show pointer on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-link:hover {
+    color: #2a3eb1; /* Darker shade on hover */
+}
+
+.footer-text {
+    margin-left: 5px; /* Space between icon and text */
+}
+
+.footer-content p {
+    margin-left: 170px;
+    color: #5867dd; /* Dark text color */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    display: flex; /* Flexbox for the right-aligned icons */
+    gap: 20px; /* Space between the icons */
+    margin-right: rem;
+    position: fixed;
+   
+    
+}
+
+.social-link {
+    color: #3b5998; /* Facebook color */
+    font-size: 45px; /* Adjust icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-link:hover {
+    color: #2a3eb1; /* Slight color change on hover */
+}
+
+#twitter-icon {
+    color: #1DA1F2; /* Twitter color */
+}
+
+.social-link:hover#twitter-icon {
+    color: #0d8bec; /* Darker shade on hover */
+}
