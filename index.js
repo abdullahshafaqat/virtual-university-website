@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Define the correct credentials for testing (you can modify these values)
     const correctStudentID = "bc240411826"; // Example Student ID
-    const correctPassword = "Zz@12345"; // Example Password
+    const correctPassword = "Abdullah@123"; // Example Password
 
     // Select the Sign-In button
     const signInButton = document.querySelector('.login-button');
